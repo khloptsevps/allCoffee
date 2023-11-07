@@ -1,0 +1,36 @@
+.navigation {
+  // background-color: lightblue;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 95px;
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.navbar {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__link {
+    &:hover {
+      color: $color-hover-link;
+    }
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    color: $color-black;
+  }
+}

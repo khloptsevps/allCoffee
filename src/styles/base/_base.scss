@@ -1,0 +1,28 @@
+// doc font size (10px)
+
+html {
+  font-size: 62.5%;
+  @include respond(desktop) {
+    font-size: 75%;
+  }
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  padding: 3rem 5rem;
+  background-color: $color-white;
+}
+
+.container {
+  background-color: #f7f7f7;
+  position: relative;
+  z-index: 0;
+}
