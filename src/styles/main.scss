@@ -3,6 +3,9 @@
 
 @import './base/_base.scss';
 @import './base/typography.scss';
+@import './base/utils.scss';
+
+@import './components/_button.scss';
 
 @import './layout/_header.scss';
 @import './layout/_navigation.scss';
