@@ -12,3 +12,20 @@
     width: 75%;
   }
 }
+
+.section-info {
+  background-color: #333;
+  padding: 80px 60px;
+
+  color: $color-white;
+  &__info-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__text {
+    &_small {
+      font-size: 16px;
+    }
+  }
+}
