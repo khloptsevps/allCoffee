@@ -1,0 +1,53 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+}
+
+.content {
+  padding: 0 80px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+
+  &__description {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  &__button {
+    text-transform: uppercase;
+    color: $color-white;
+    &:hover {
+      color: $color-black;
+    }
+    &:active {
+      color: $color-white;
+    }
+  }
+
+  &__left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__right-section {
+    width: 450px;
+    height: 300px;
+
+    & > img {
+      height: 100%;
+    }
+  }
+}
+
+.swiper-button-prev {
+  color: red;
+}
