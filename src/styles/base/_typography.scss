@@ -24,10 +24,16 @@ body {
   line-height: 36px;
 }
 
-.title-third {
+.title-fourth {
   font-size: 16px;
   font-weight: 600;
   &_uppercase {
     text-transform: uppercase;
   }
+}
+
+.title-third {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
