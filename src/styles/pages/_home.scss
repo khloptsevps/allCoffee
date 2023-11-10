@@ -9,6 +9,21 @@
 
   &__paragraph {
     width: 75%;
+    @media screen and (max-width: 575px) {
+      width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding: 20px 10px;
+    &__button {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 20px 10px;
   }
 }
 
@@ -21,11 +36,31 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media screen and (max-width: 740px) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @media screen and (max-width: 575px) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
   &__text {
     &_small {
       font-size: 16px;
+      @media screen and (max-width: 575px) {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 20px;
+      }
     }
+  }
+  @media screen and (max-width: 575px) {
+    padding: 20px 10px;
   }
 }
 
@@ -38,11 +73,17 @@
       text-transform: uppercase;
       font-size: 30px;
       font-weight: 600;
+      @media screen and (max-width: 575px) {
+        padding: 20px;
+      }
     }
     &__descriprion {
       font-size: 14px;
       line-height: 25px;
     }
+  }
+  @media screen and (max-width: 575px) {
+    padding: 10px 0;
   }
 }
 
@@ -62,16 +103,37 @@
   &__title {
     margin-bottom: 40px;
     line-height: 35px;
+    @media screen and (max-width: 575px) {
+      font-size: 25px;
+      line-height: 25px;
+      text-align: left;
+    }
   }
   &__description {
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 40px;
+    @media screen and (max-width: 575px) {
+      font-size: 14px;
+      text-align: justify;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    padding: 20px 10px;
   }
 }
 
 .section-work {
   padding: 60px;
+  margin-bottom: 20px;
+  &__title {
+    @media screen and (max-width: 575px) {
+      margin-bottom: 20px;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 25px;
+    }
+  }
 
   &__wrapper {
     padding-top: 40px;
@@ -88,6 +150,15 @@
       width: 1px;
       height: 100%;
       background-color: #ccc;
+      @media screen and (max-width: 990px) {
+        display: none;
+      }
+      @media screen and (max-width: 575px) {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 990px) {
+      margin-bottom: 30px;
     }
   }
 
@@ -95,5 +166,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  @media screen and (max-width: 575px) {
+    padding: 20px 10px;
   }
 }

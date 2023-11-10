@@ -7,20 +7,41 @@
     margin-bottom: 40px;
   }
 
+  @media screen and (max-width: 990px) {
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column-reverse;
+  }
+
   &__dot {
     position: absolute;
     left: calc(17% + 2.4px);
     z-index: 10;
+    @media screen and (max-width: 990px) {
+      display: none;
+    }
   }
 
   &__step {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 990px) {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+    @media screen and (max-width: 575px) {
+      //fff
+    }
   }
 
   &__wrapper {
     margin-right: 120px;
+    @media screen and (max-width: 990px) {
+      margin-right: 0;
+    }
   }
 
   &__text {
@@ -46,6 +67,13 @@
       border-top-width: 1px;
       border-color: #ccc;
       z-index: -1;
+      @media screen and (max-width: 990px) {
+        right: -55px;
+        width: 215px;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      flex-direction: column-reverse;
     }
   }
   &__img {
@@ -56,6 +84,17 @@
     overflow: hidden;
 
     margin-right: 30px;
+
+    @media screen and (max-width: 990px) {
+      margin-right: 0;
+      height: 140px;
+      width: 140px;
+    }
+
+    @media screen and (max-width: 700px) {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
 
     &::after {
       content: '';
@@ -83,6 +122,9 @@
       font-size: 15px;
       font-weight: 400;
       line-height: 23px;
+    }
+    @media screen and (max-width: 575px) {
+      margin-bottom: 25px;
     }
   }
   &:hover .card-work__img {

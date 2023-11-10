@@ -1,7 +1,8 @@
 .navigation {
-  display: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -30,5 +31,8 @@
     text-decoration: none;
     background-color: transparent;
     color: $color-black;
+  }
+  @media screen and (max-width: 1000px) {
+    display: none;
   }
 }

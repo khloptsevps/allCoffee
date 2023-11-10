@@ -18,6 +18,10 @@
   &__text {
     font-size: 15px;
     line-height: 20px;
+    @media screen and (max-width: 575px) {
+      font-size: 14px;
+      text-align: justify;
+    }
   }
 }
 .list {
