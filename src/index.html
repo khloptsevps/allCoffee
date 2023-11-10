@@ -15,29 +15,38 @@
     <div class="container">
       <!-- navigation-->
       <div class="navigation">
-        <div class="logo">
-          <!-- TODO LOGO link-->
-          <a href="#">
-            <img class="logo__img" src="./images/logo.jpg" alt="logo" />
-          </a>
-        </div>
         <!-- TODO nav elements-->
         <nav class="navbar">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">главная</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">продукция</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">о нас</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__link">контакты</a>
-            </li>
-          </ul>
+          <div class="navbar-container">
+            <div class="navbar__wrap">
+              <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <a href="#">
+                <img class="logo" src="./images/logo.jpg" alt="logo" />
+              </a>
+              <ul class="navbar__list" id="list">
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">главная</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">продукция</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">о нас</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
+        <div class="popup" id="popup"></div>
       </div>
       <!-- header -->
       <header class="header">

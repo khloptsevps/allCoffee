@@ -8,6 +8,9 @@
   padding: 2.5rem;
   &__content {
     color: #fff;
+    @media screen and (max-width: 1000px) {
+      padding-top: 25px;
+    }
   }
   &__title {
     margin: 0;
